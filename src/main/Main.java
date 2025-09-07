@@ -11,14 +11,13 @@ public class Main {
 
 //        String resource_file_path="resources/applicationContext.xml";
 //        ApplicationContext context= new ClassPathXmlApplicationContext(resource_file_path);
-        ApplicationContext context=new AnnotationConfigApplicationContext(SpringConfigFile.class);
+        ApplicationContext context = new AnnotationConfigApplicationContext(SpringConfigFile.class);
 
-        Student std=(Student) context.getBean("student");
+        Student std = (Student) context.getBean("student");
         std.display();
     }
 
 
-}
 //1.  spring-beans-xxx.jar
 //2.  spring-core-xxx.jar
 //3.  spring-context-xxx.jar
@@ -26,4 +25,8 @@ public class Main {
 //5.  spring-expression-xxx.jar
 
 
+
+
+
+}
 
